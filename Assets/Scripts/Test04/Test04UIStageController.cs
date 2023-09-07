@@ -26,6 +26,6 @@ public class Test04UIStageController : MonoBehaviour
             uiStage.Init(stageNum);
 
         }
-        this.uiStages[0].ChangeState(Test04UIStage.eState.Doing);
+        //this.uiStages[0].ChangeState(Test04UIStage.eState.Doing);
     }
 }
