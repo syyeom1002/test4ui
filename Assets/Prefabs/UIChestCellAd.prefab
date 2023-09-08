@@ -900,7 +900,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6518893407999983221}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -969,6 +969,9 @@ MonoBehaviour:
   btnPrice: {fileID: 7660246337634155597}
   chestType: 0
   price: 100
+  txtPrice: {fileID: 8149808823121993695}
+  txtName: {fileID: 3883841297574452982}
+  icon: {fileID: 6676194355992196394}
   btnAd: {fileID: 1649991356432249291}
 --- !u!1 &6760997910948052475
 GameObject:

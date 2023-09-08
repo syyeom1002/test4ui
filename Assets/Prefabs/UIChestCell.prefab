@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5052622341668926919}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -94,6 +94,9 @@ MonoBehaviour:
   btnPrice: {fileID: 5555120804480401208}
   chestType: 1
   price: 600
+  txtPrice: {fileID: 3837359677665503493}
+  txtName: {fileID: 4400380987510702948}
+  icon: {fileID: 9128759376565513874}
 --- !u!1 &5158198297713906126
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,8 +299,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SilverChest
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: be647f5a2f1cf3b4391a63574af00401, type: 2}
+  m_sharedMaterial: {fileID: 6109198463757325642, guid: be647f5a2f1cf3b4391a63574af00401, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -357,7 +360,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -5.1153564, w: 0}
+  m_margin: {x: 0, y: 0, z: -33.894028, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

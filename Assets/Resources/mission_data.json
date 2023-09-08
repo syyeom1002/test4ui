@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1000",
+    "name": "Collcect Gold",
+    "desc": "Collect {0} Golds",
+    "goal": "10000",
+    "icon_name": "icon_coins_pouch",
+    "mission_icon_width": "93",
+    "mission_icon_height": "77",
+    "reward_amount": "1",
+    "reward_icon_name": "icon_lighting_energy",
+    "reward_icon_width": "46",
+    "reward_icon_height": "64"
+  },
+  {
+    "id": "1001",
+    "name": "Climb the ranks",
+    "desc": "Play {0} times",
+    "goal": "5",
+    "icon_name": "icon_dungeon",
+    "mission_icon_width": "84",
+    "mission_icon_height": "80",
+    "reward_amount": "1",
+    "reward_icon_name": "icon_gemstone_rune",
+    "reward_icon_width": "51",
+    "reward_icon_height": "58"
+  },
+  {
+    "id": "1002",
+    "name": "Level Up",
+    "desc": "{0} Level up characters",
+    "goal": "5",
+    "icon_name": "icon_equip_helmet_1",
+    "mission_icon_width": "75",
+    "mission_icon_height": "79",
+    "reward_amount": "3",
+    "reward_icon_name": "icon_bomb",
+    "reward_icon_width": "73",
+    "reward_icon_height": "57"
+  },
+  {
+    "id": "1003",
+    "name": "Ad Break",
+    "desc": "Watch {0} Ads",
+    "goal": "5",
+    "icon_name": "icon_tv",
+    "mission_icon_width": "74",
+    "mission_icon_height": "88",
+    "reward_amount": "1",
+    "reward_icon_name": "icon_potion_red",
+    "reward_icon_width": "48",
+    "reward_icon_height": "69"
+  },
+  {
+    "id": "1004",
+    "name": "Technician",
+    "desc": "Use Skills {0} times",
+    "goal": "6",
+    "icon_name": "icon_book_1",
+    "mission_icon_width": "69",
+    "mission_icon_height": "81",
+    "reward_amount": "500",
+    "reward_icon_name": "icon_coins",
+    "reward_icon_width": "53",
+    "reward_icon_height": "50"
+  }
+]

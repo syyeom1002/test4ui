@@ -17,12 +17,12 @@ public class UIChestCell : MonoBehaviour
     protected eChestType chestType;
     [SerializeField]
     protected int price;
-    //[SerializeField]
-    //private TMP_Text txtPrice;
-    //[SerializeField]
-    //private TMP_Text txtName;
-    //[SerializeField]
-    //private Image icon;
+    [SerializeField]
+    private TMP_Text txtPrice;
+    [SerializeField]
+    private TMP_Text txtName;
+    [SerializeField]
+    private Image icon;
 
     public System.Action onClickPrice;
 
@@ -43,12 +43,13 @@ public class UIChestCell : MonoBehaviour
     
     // Start is called before the first frame update
   
-    public virtual void Init(ChestData data)
+    public virtual void Init(ChestData data,Sprite sprite)
     {
         //this.price = data.price;
-        //this.txtName.text = data.name;
-        //this.txtPrice.text = this.price.ToString();
+        this.txtName.text = data.name;
+        this.txtPrice.text = this.price.ToString();
         //this.chestType = (eChestType)data.type;
+        this.icon.sprite = sprite;
         this.btnPrice.onClick.AddListener(() =>
         {
             Debug.LogFormat("상자타입:{0},가격:{1}", this.chestType, this.price);

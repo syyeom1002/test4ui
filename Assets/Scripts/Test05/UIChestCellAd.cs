@@ -14,13 +14,12 @@ public class UIChestCellAd : UIChestCell
         
     }
 
-    public override void Init(ChestData data)
+    public override void Init(ChestData data,Sprite sprite)
     {
-        base.Init(data);
         
         this.btnAd.onClick.AddListener(() =>
         {
-            //Debug.LogFormat("{0}: ±¤°íº¸±â", this.chestType);
+            Debug.LogFormat("{0}: ±¤°íº¸±â", this.chestType);
             this.onClickAd();
         });
     }
