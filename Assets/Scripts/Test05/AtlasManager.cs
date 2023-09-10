@@ -32,5 +32,10 @@ public class AtlasManager : MonoBehaviour
             var atlas = Resources.Load<SpriteAtlas>(atlasName);
             this.dicAtlases.Add(atlasName, atlas);
         }
+        Debug.LogFormat("{0}개의 아틀라스를 로드 했습니다. ", this.dicAtlases.Count);
+    }
+    public SpriteAtlas GetAtlas(string atlasName)
+    {
+        return this.dicAtlases[atlasName];
     }
 }

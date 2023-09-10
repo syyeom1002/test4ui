@@ -53,4 +53,17 @@ public class DataManager :MonoBehaviour
     {
         return this.dicMissionDatas.Values.ToList();
     }
+    private Dictionary<int, GoldData> dicGoldDatas;
+    public void LoadGoldData()
+    {
+        TextAsset asset = Resources.Load<TextAsset>("gold_data");
+        Debug.Log(asset.text);
+        GoldData[] arrGoldDatas = JsonConvert.DeserializeObject<GoldData[]>(asset.text);
+        Debug.LogFormat("arrGoldDatas:{0}", arrGoldDatas.Length);
+        this.dicGoldDatas = arrGoldDatas.ToDictionary(x => x.id);
+    }
+    public List<GoldData> GetGoldDatas()
+    {
+        return this.dicGoldDatas.Values.ToList();
+    }
 }

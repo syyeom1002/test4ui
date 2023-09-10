@@ -1,22 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class UIGoldScrollView : MonoBehaviour
 {
     [SerializeField]
-    private UIGoldCell[] goldCells;
+    private GameObject uiGoldPrefab;
+    [SerializeField]
+    private Transform content;
+    [SerializeField]
+    private SpriteAtlas atlas;
+    
     // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
-        for(int i = 0; i < goldCells.Length; i++)
+        List<GoldData> goldDatas = DataManager.instance.GetGoldDatas();
+        
+        foreach(GoldData data in goldDatas)
         {
-            UIGoldCell cell = goldCells[i];
-            cell.onClickPrice = () =>
-            {
-                Debug.LogFormat("<color=blue>타입: {0},가격 {1}</color>", cell.GoldType, cell.Price);
-            };
-            cell.Init();
+            Debug.LogFormat("<color=yellow>id:{0}</color>,name:{1},type:{2},price:{3},amount:{4},{5}", data.id, data.name, data.type, data.price, data.amount,data.sprite_name);
+            UIGoldCell cell = null;
+            GameObject go = Instantiate<GameObject>(this.uiGoldPrefab, content);//content위치에 
+            cell = go.GetComponent<UIGoldCell>();
+            cell.Init(data);
+            
         }
     }
 }
