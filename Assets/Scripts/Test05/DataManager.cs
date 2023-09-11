@@ -53,6 +53,10 @@ public class DataManager :MonoBehaviour
     {
         return this.dicMissionDatas.Values.ToList();
     }
+    public List<MissionData> GetMissionDataList()
+    {
+        return this.dicMissionDatas.Values.ToList();
+    }
     private Dictionary<int, GoldData> dicGoldDatas;
     public void LoadGoldData()
     {
@@ -66,4 +70,5 @@ public class DataManager :MonoBehaviour
     {
         return this.dicGoldDatas.Values.ToList();
     }
+
 }
