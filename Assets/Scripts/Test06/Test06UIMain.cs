@@ -24,7 +24,7 @@ public class Test06UIMain : MonoBehaviour
         DataManager.instance.LoadMissionData();
         AtlasManager.instance.LoadAtlases();
         
-        this.missionScrollView.Init();
+        //this.missionScrollView.Init();
 
         this.btnSave.onClick.AddListener (() =>
         {
